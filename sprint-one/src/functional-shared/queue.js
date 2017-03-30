@@ -12,7 +12,8 @@ var queueMethods = {};
 queueMethods.enqueue = function(value) {
   this.storage[this.counter + this.currentIndex] = value;
   this.counter++;
-}
+};
+
 queueMethods.dequeue = function() {
   if (this.counter > 0) {
     var removed = this.storage[this.currentIndex];
@@ -20,12 +21,11 @@ queueMethods.dequeue = function() {
     this.currentIndex++;
     return removed;
   }
+};
 
-}
-
-  queueMethods.size = function() {
-    return this.counter;
-  }
+queueMethods.size = function() {
+  return this.counter;
+};
 
 // counter 2
 //

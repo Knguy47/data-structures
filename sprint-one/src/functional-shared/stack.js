@@ -15,18 +15,17 @@ stackMethods.pop = function(){
     this.counter--;
     return removed;
   }
-}
+};
 
 stackMethods.push = function(value){
  //console.log(this.result);
- this.storage[this.counter] = value;
- this.counter++;
-
-}
+  this.storage[this.counter] = value;
+  this.counter++;
+};
 
 stackMethods.size = function(){
   return this.counter;
-}
+};
 
 
 // result[0] = value;
